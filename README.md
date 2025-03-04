@@ -207,7 +207,11 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
     <td>Schiaffino</td>
     <td>
       <ul>
-        <li></li>
+        <li>5.c.i) armado de dataset con oraciones. ii) métodos de medición de similitud semántica (similitud coseno, similitud por presencia de token, word2vec, FastText)</li>
+<li>5.b.i) Sistemas de anotación (BOU, BILOU). ii) NER de Spacy y Stanza y extracción de relaciones.</li>
+<li>5.b.iii) Extracción de información en reportes médicos.</li>
+<li>5.b.iv) Detección de relaciones en informes médicos.</li>
+<li>Entrega TP2</li>
       </ul>
     </td>
     <td>
@@ -222,7 +226,10 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
     <td>Carranza</td>
     <td>
       <ul>
-        <li></li>
+        <li>5.ai) el análisis de sentimiento. Modelos disponibles en NLTK y Stanza.</li>
+<li>5.a.v) Detección de lenguaje de odio. Pysentimiento. Comentar sobre el diseño del entrenamiento, pasos, selección y evaluación de anotadores.
+</li>
+<li>Consigna de TP3</li>
       </ul>
     </td>
     <td>
@@ -237,7 +244,8 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
     <td>Schiaffino</td>
     <td>
       <ul>
-        <li></li>
+        <li>5.a.iv) Entrenamiento de modelos de clasificación para análisis de sentimiento (Bayesiano Ingenuo, Regresión Logística y Máquina de soporte vectorial) y comparación de su rendimiento.</li>
+<li>Entrega de TP3</li>
       </ul>
     </td>
     <td>
@@ -252,7 +260,9 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
     <td>Carranza</td>
     <td>
       <ul>
+								<li>5.d. Entendimiento del lenguaje natural (*Natural Language Understanding*) en la era de los grandes modelos de lenguaje.</li>
         <li>Cierre de cursada.</li>
+        <li>Presentación consignas para trabajo final</li>
       </ul>
     </td>
     <td></td>
