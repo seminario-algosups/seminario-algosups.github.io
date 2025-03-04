@@ -6,4 +6,6 @@
 3. Procesamiento del lenguaje natural: definición, tareas y enfoques; 
 4. lenguaje de programación Python en Google Colab (tipos de datos, variables, sintaxis básica) 
 
+Para esta clase vamos a usar [este apunte](./handout.pdf) y [esta notebook](./intro-python.md).
+
 {% include additional_content.html %}
