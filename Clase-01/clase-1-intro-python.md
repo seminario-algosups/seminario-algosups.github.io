@@ -47,21 +47,21 @@ Esta notebook cubre la introducción al curso, una presentación de sintaxis bá
 **Python**: Lenguaje de alto nivel. Muy usado actualmente (con muchos recursos disponibles). Portable.
 
 
-__Lenguaje de alto nivel:__ Lenguaje diseñado para ser fácil de leer y escribir para la gente. La computadora debe traducirlo a un lenguaje de bajo nivel para entenderlo. Ej: Python.
+__Lenguaje de alto nivel:__ Lenguaje diseñado para ser fácil de leer y escribir para la gente. La computadora debe traducirlo a un lenguaje de bajo nivel para entenderlo. Ej: Python, C++, Java.
 
 
-_Lenguaje de bajo nivel:_ Lenguaje diseñado para ser fácil de ejecutar para una computadora; también “lenguaje de máquina” o “lenguaje ensamblador”. Ej: Código binario.
+__Lenguaje de bajo nivel:__ Lenguaje diseñado para ser fácil de ejecutar para una computadora; también “lenguaje de máquina” o “lenguaje ensamblador”. Ej: Código binario.
 
+__Portabilidad:__ La cualidad de un programa que le permite ser ejecutado en más de un tipo de computadora. Los lenguajes de alto nivel son más portables que los de bajo nivel.
 
-_Lenguaje de nivel medio:_ Utilizan estructuras típicas de los lenguajes de alto nivel pero, a su vez, permiten un control a muy bajo nivel. Ej: C.
+Existen dos tipos de programas para traducir lenguajes de alto nivel a lenguajes de bajo nivel: 
 
+- *Intérpretes*: Programa que traduce y ejecuta progresivamente un lenguaje de alto nivel.
+- *Compiladores*: Programa que traduce todo un código fuente en un lenguaje de alto nivel a un código ejecutable de bajo nivel que luego se ejecuta mediante un ejecutor.
 
-__Portabilidad:__ La cualidad de un programa que le permite ser ejecutado en más de un tipo de computadora.
-
-
+Python es un lenguaje con intérprete.
 
 ### 📌 Algunos conceptos básicos
-
 
 
 
@@ -71,6 +71,7 @@ __Portabilidad:__ La cualidad de un programa que le permite ser ejecutado en má
 **Valor:** un número o cadena (o cualquier otra cosa que se especifique posteriormente) que puede almacenarse en una variable o calcularse en una expresión.
 _Ej: edad = 17 (Variable: edad. Valor: 17)_
 
+**tipo:** Los lenguajes formales dividen los valores en distintas clases. Cada una de estas clases tiene características particulares y los operadores son sensibles a ellas. En Python, los tipos incluyen a los enteros (*integer*), los decimales (*float*), las cadenas (*strings*), los conjuntos (*sets*) y los diccionarios.
 
 **Sentencia:** es una porción de código que representa una orden o acción. 
 
@@ -169,7 +170,7 @@ datos(nombre, edad)
 ### 📌 Tipos de datos
 
 
-Para verificar el tipo de dato Python ofrece la función nativa type() que devuelve el tipo de dato de aquello que le pasamos como argumento. Hay varios tipos de datos, pero nombramos acá solo algunos a fines de ejemplos.
+Para verificar el tipo de dato Python ofrece la función nativa type() que devuelve el tipo de dato de aquello que le pasamos como argumento.
 
 Hay que tener en cuenta que los distintos tipos de dato tienen distintos 'comportamientos'. Si por alguna razón pedimos que python realice un corportamiento típico de un tipo de dato, pero le pasamos otro tipo de dato obtendremos un error. Veremos esto un poco más adelante
 
@@ -605,3 +606,7 @@ with open("archivo_nuevo_generado_with_open.txt", "r") as file2:
 ```python
 
 ```
+
+{% include additional_content.html %}
+
+{% include copybutton.html %}
