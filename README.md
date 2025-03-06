@@ -29,7 +29,8 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
     </td>
     <td>
         <ul>
-            <li></li>
+            <li><a href="Clase-01/handout.pdf">Presentación de diapositivas</a></li>
+            <li><a href="Clase-01/clase-1-intro-python.md">Jupyter notebook</a></li>
         </ul>
     </td>
   </tr>

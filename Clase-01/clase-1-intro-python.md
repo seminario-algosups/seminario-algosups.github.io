@@ -93,9 +93,6 @@ a = 10  # Cambia estos valores
 b = 5   # Cambia estos valores
 ```
 
-    9
-
-
 
 ```python
 print(a)
@@ -116,9 +113,6 @@ concatenar = "hola, " + "amigos"
 print(concatenar)
 ```
 
-    hola, amigos
-
-
 
 ```python
 nombre = "Fernando" # Variable nombre: Fernando
@@ -127,10 +121,6 @@ print("Nombre: ",nombre) # Instrucción: imprimir string 'Nombre:' y la variable
 edad = 27 
 print(nombre, " tiene ", edad, " años.") 
 ```
-
-    Nombre:  Fernando
-    Fernando  tiene  27  años.
-
 
 
 #### 📌 Funciones:
@@ -148,9 +138,6 @@ def saludar(name): ## Parámetro: name (interno a la función)
 saludar(nombre) ## Argumento: la cadena "Fernando" almacenada en la variable 'nombre'.
 ```
 
-    hola,  Fernando
-
-
 
 ```python
 #Funcion con dos parametros
@@ -162,10 +149,6 @@ datos(nombre, edad)
 
 
 ```
-
-    Nombre:  Fernando
-    Edad:  27
-
 
 ### 📌 Tipos de datos
 
@@ -179,10 +162,6 @@ Hay que tener en cuenta que los distintos tipos de dato tienen distintos 'compor
 print(type(nombre))
 print(type(edad))
 ```
-
-    <class 'str'>
-    <class 'int'>
-
 
 | tipo | descripción | ejemplo |
 | :---------: | :-----: | :------: |
@@ -215,23 +194,9 @@ nombre.upper() #Convertir a mayúsculas
 ```
 
 
-
-
-    'FERNANDO'
-
-
-
-
 ```python
 nombre.lower() #A minúsculas
 ```
-
-
-
-
-    'fernando'
-
-
 
 
 ```python
@@ -240,40 +205,14 @@ len(nombre) #Largo, pueden probar con otros datos cambiando el valor o directame
 ```
 
 
-
-
-    8
-
-
-
-
 ```python
 list(nombre)
 ```
 
 
-
-
-    ['F', 'e', 'r', 'n', 'a', 'n', 'd', 'o']
-
-
-
-
 ```python
 int(nombre) # Qué pasa si quiero convertir a entero un string? 
 ```
-
-
-    ---------------------------------------------------------------------------
-
-    ValueError                                Traceback (most recent call last)
-
-    <ipython-input-7-f7e1ef64f59a> in <module>()
-    ----> 1 int(nombre)
-    
-
-    ValueError: invalid literal for int() with base 10: 'Fernando'
-
 
 
 ```python
@@ -308,10 +247,6 @@ print(nombre_completo)
 print(nombre_apellido)
 ```
 
-    Juan Gimenez
-    ['Juan', 'Gimenez']
-
-
 
 **.split** como vemos, es un método que separa los strings. Y el método inverso es **.join**, para unir muchas cadenas intercalandolas con otra
 
@@ -321,23 +256,9 @@ print(nombre_apellido)
 ```
 
 
-
-
-    'Juan Gimenez'
-
-
-
-
 ```python
 nombre_apellido.pop() 
 ```
-
-
-
-
-    True
-
-
 
 ### Índices
 
@@ -352,23 +273,9 @@ type(lista_de_nombres)
 ```
 
 
-
-
-    list
-
-
-
-
 ```python
 len(lista_de_nombres)
 ```
-
-
-
-
-    5
-
-
 
 
 ```python
@@ -379,234 +286,10 @@ print(lista_de_nombres[0]) #Qué pasará?
 print(lista_de_nombres[-1:]) #Qué pasará?
 ```
 
-    Esteban
-    ['Gerardo', 'Esteban']
-    ['Florencia', 'Vanesa', 'Adrian']
-    Gerardo
-    ['Adrian']
-
-
 
 ```python
 
 ```
-
-## 📌 Bucles
-
-
-```python
-print([x for x in lista_de_nombres])
-```
-
-    ['Gerardo', 'Esteban', 'Florencia', 'Vanesa', 'Adrian']
-
-
-
-```python
-x = 0 
-for nombre in lista_de_nombres:
-    x += 1 # Contador
-    print(x, "Nombre: ",nombre)
-```
-
-    1 Nombre:  Gerardo
-    2 Nombre:  Esteban
-    3 Nombre:  Florencia
-    4 Nombre:  Vanesa
-    5 Nombre:  Adrian
-
-
-
-```python
-def regresion(n):
-    while n > 0:
-        print(n)
-        n = n-1
-    print('Despegue!')
-    
-regresion(int(input("Ingresá un numero:")))
-```
-
-    Ingresá un numero:4
-    4
-    3
-    2
-    1
-    Despegue!
-
-
-### Expresiones booleanas
-
-**Expresión booleana:** Es una expresión que es cierta o falsa. Podemos generar expresiones booleanas utilizando operador de comparación u operadores relacionales. Estos comparan dos valores: **==**, **!=**, **>**, **<**, **>=** y **<=** y nos devuelven el valor de verdad del enunciado.
-
-**ACLARACIÓN: el signo = nos permite asignar un valor a una variable. El signo == nos permite comparar dos valores (sean int, string o float)**
-
-
-```python
-4 > 2
-#4 < 2
-#4 == 4   # OJO: " = "
-# cuatro = 4
-```
-
-
-
-
-    True
-
-
-
-
-### Ejecución condicional
-
-**Sentencia condicional:** Sentencia que controla el flujo de ejecución de un programa dependiendo de cierta condición. Es decir, es una sentencia que, dependiendo de su valor de verdad, nos permite establecer si el program se sigue ejecutando o no. La forma más simple es la sentencia **if**.
-
-**Condición:** La expresión booleana que sucede al if en una sentencia condicional. Esta expresión determina qué rama del programa se ejecutará. 
-
-
-```python
-nombre = input("Cómo te llamás?")
-if nombre[-1] == "a":
-    print("Nombre Propio: Femenino")
-```
-
-    Ingresá un número: 5
-    Elegiste un numero positivo
-
-
-### Ejecución alternativa: 
-La ejecución alternativa de la sentencia condicional es aquella en la que tenemos más de una posibilidad. Cada condición determina qué posibilidad se ejecuta. Cada posibilidad en el flujo de la ejecución se denomina rama.
-Si tenemos solamente dos posibilidades, podemos usar **if** y **else**. If define nuestra condición y else nos dice qué sucede si esa condición no es cierta.
-Si queremos tener más de dos posibilidades, usamos **if**, **elif** (abreviación de 'else if') y **else**. En este caso, if define una condición, elif nos permite definir otra condición (es posible tener varios elif) y else nos dice qué sucede si nada de lo anterior es cierto.
-
-
-```python
-np_masc = [] # Creo dos listas vacías para separarlos
-np_fem = []
-
-for nombre in lista_de_nombres:
-    if nombre[-1] == "n":
-        np_masc.append(nombre) # Agrego elemento a la lista
-    elif nombre[-1] == "o":
-        np_masc.append(nombre) # Agrego elemento a la lista
-    else:
-        np_fem.append(nombre) # Agrego elemento a la lista
-
-```
-
-
-```python
-np_masc
-```
-
-
-
-
-    ['Gerardo', 'Esteban', 'Adrian']
-
-
-
-
-```python
-np_fem
-```
-
-
-
-
-    ['Florencia', 'Vanesa']
-
-
-
-### 📍 Ejercicio:
-Escribir una función que tome un carácter y devuelva True si es una vocal, de lo contrario devuelve False.
-
-
-
-```python
-
-```
-
-### 📌 Integración con Google Drive
-
-
-```python
-# Al ejecutar esta celda se vinculará tu almacenamiento en drive. 
-#Deberás acceder al link para autorizar la integración
-
-from google.colab import drive
-# This will prompt for authorization.
-drive.mount('/content/drive')
-```
-
-    Mounted at /content/drive
-
-
-## 📌 Archivos
-
-La función incorporada open() toma como argumento la ruta de un archivo y retorna una instancia del tipo file.
-Si no se especifica una ruta, el fichero se busca en el directorio actual. Por defecto el modo de apertura es únicamente para lectura. La función read() retorna el contenido del archivo abierto.
-Una vez que se ha terminado de trabajar con el fichero debe cerrarse vía close().
-
-
-Para abrir un archivo en modo escritura, debe especificarse en el segundo argumento.
-Para escribir en él se emplea el método write().
-
-Para leer, escribir y añadir contenido de un fichero en formato binario, deben utilizarse los modos "rb", "wb" y "ab", respectivamente.
-
-
-
-```python
-#Esta celda generará un "archivo_nuevo_generado_por_colab.txt" en tu almacenamiento de Drive
-f = open("archivo_nuevo_generado_por_colab.txt", "w") 
-
-f.write("Hola mundo")
-f.close()
-```
-
-Nótese que la función write() reemplaza todo el contenido anterior. Para añadir datos al final del archivo sin borrar información previa, el fichero debe abrirse en la modalidad append ("a").
-
-
-
-```python
-f = open("archivo_nuevo_generado_por_colab.txt", "a")
-
-f.write("\nHola ")
-f.write("mundo")
-f.close()
-```
-
-
-```python
-Para leer, escribir y añadir contenido de un fichero en formato binario, deben utilizarse los modos "rb", "wb" y "ab", respectivamente.
-
-```
-
-Ademas de este método, podemos usar la sentencia with open. Esto nos permite prescindir de las instancias de apertura y cierre de archivos mientras estamos trabajando.
-
-
-```python
-# Esta celda generará un "archivo_nuevo_generado_with_open" en tu almacenamiento de Drive
-with open("archivo_nuevo_generado_with_open.txt", 'w') as file:
-  archivo_modificado = file.write("linea numero 1")
-
-```
-
-
-```python
-with open("archivo_nuevo_generado_with_open.txt", "r") as file2:
-  print(file2.readlines())
-
-```
-
-    ['linea numero 1']
-
-
-
-```python
-
-```
-
-{% include additional_content.html %}
 
 {% include copybutton.html %}
+{% include additional_content.html %}
