@@ -51,8 +51,8 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
   </tr>
   <tr>
     <td><a href="./Clase-03/index.md">03</a></td>
-    <td>Schiaffino</td>
     <td>05/04/2025</td>
+    <td>Schiaffino</td>
     <td>
         <ul>
     	<li>2.i) Aprendizaje supervisado y no supervisado.</li>
@@ -69,8 +69,8 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
   </tr>
   <tr>
     <td><a href="./Clase-04/index.md">04</a></td>
-    <td>Schiaffino</td>
     <td>12/04/2025</td>
+    <td>Schiaffino</td>
     <td>
       <ul>
         <li>2.v) Vectorización (conversión de un texto en tanto dato no estructurado en un arreglo numérico estructurado; CountVectorizer, TfidfVectorizer).</li>
@@ -185,8 +185,8 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
   </tr>
   <tr>
     <td><a href="./Clase-11/index.md">11</a></td>
-    <td>Carranza<br>Schiaffino</td>
     <td>31/05/2025</td>
+    <td>Carranza<br>Schiaffino</td>
     <td>
       <ul>
         <li>4.iv) Análisis sintáctico basado en dependencias y su anotación en CONLL-U.</li>
