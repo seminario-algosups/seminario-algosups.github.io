@@ -1,8 +1,12 @@
 {% include head.html %}
 
-## Requerimientos técnicos
+## Presentación
 
-En la cursada vamos a utilizar diversos recursos computacionales, ......
+Este espacio está pensado para servir de soporte al seminario "Algoritmos supervisados y convenciones de anotación para tareas de procesamiento del lenguaje natural", dictado durante el primer cuatrimestre de 2025 para la carrera de [Letras](https://letras.filo.uba.ar/) de la [Facultad de Filosofía y Letras](https://www.filo.uba.ar/) de la [Universidad de Buenos Aires](https://uba.ar/). El seminario está a cargo de [Fernando Carranza](https://fernando-carranza.github.io/) como profesor adjunto interino con dedicación simple y [Fernando Schiaffino](https://ar.linkedin.com/in/fernando-schiaffino-339237a1/es) con asignación de funciones.
+
+## Modalidad
+
+En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para disponibilizar la bibliografía y para comunicarnos a través del foro. El resto de los materiales de clase se van a centralizar en esta página y su respectivo repositorio. El repositorio se puede clonar para correr el código de las clases de manera local, siempre y cuando se haya instalado correctamente antes Jupyter Notebook, Python y las librerías relevantes. También es posible correr el código desde una cuenta de Google Colab.
 
 ## Cronograma de clases y materiales
 
