@@ -1,4 +1,4 @@
-<a href="https://colab.research.google.com/gist/chafa618/886efbd6e21e4037cb5f7b9676fe94cd/clase-1-introducci-n-a-python.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://drive.google.com/file/d/1guwe2a-cyMfmOaVHNXc7gTbJw2Rx65fR/view?usp=sharing" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## 📘 Introducción a la programación en Python - Parte 1
 
