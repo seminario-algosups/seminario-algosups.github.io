@@ -123,3 +123,5 @@ def plot_tfif_matrix(X, texts, words):
     plt.ylabel('Textos')
     plt.title('Matriz de Frecuencia TF-IDF')
     plt.show()
+    
+    
