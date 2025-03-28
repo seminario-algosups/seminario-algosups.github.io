@@ -1,8 +1,12 @@
 {% include head.html %}
 
-## Requerimientos técnicos
+## Presentación
 
-En la cursada vamos a utilizar diversos recursos computacionales, ......
+Este espacio está pensado para servir de soporte al seminario "Algoritmos supervisados y convenciones de anotación para tareas de procesamiento del lenguaje natural", dictado durante el primer cuatrimestre de 2025 para la carrera de [Letras](https://letras.filo.uba.ar/) de la [Facultad de Filosofía y Letras](https://www.filo.uba.ar/) de la [Universidad de Buenos Aires](https://uba.ar/). El seminario está a cargo de [Fernando Carranza](https://fernando-carranza.github.io/) como profesor adjunto interino con dedicación simple y [Fernando Schiaffino](https://ar.linkedin.com/in/fernando-schiaffino-339237a1/es) con asignación de funciones.
+
+## Modalidad
+
+En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para disponibilizar la bibliografía y para comunicarnos a través del foro. El resto de los materiales de clase se van a centralizar en esta página y su respectivo repositorio. El repositorio se puede clonar para correr el código de las clases de manera local, siempre y cuando se haya instalado correctamente antes Jupyter Notebook, Python y las librerías relevantes. También es posible correr el código desde una cuenta de Google Colab.
 
 ## Cronograma de clases y materiales
 
@@ -29,7 +33,8 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
     </td>
     <td>
         <ul>
-            <li></li>
+            <li><a href="Clase-01/handout.pdf">Presentación de diapositivas</a></li>
+            <li><a href="Clase-01/clase-1-intro-python.md">Jupyter notebook</a></li>
         </ul>
     </td>
   </tr>
@@ -51,8 +56,8 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
   </tr>
   <tr>
     <td><a href="./Clase-03/index.md">03</a></td>
-    <td>Schiaffino</td>
     <td>05/04/2025</td>
+    <td>Schiaffino</td>
     <td>
         <ul>
     	<li>2.i) Aprendizaje supervisado y no supervisado.</li>
@@ -69,8 +74,8 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
   </tr>
   <tr>
     <td><a href="./Clase-04/index.md">04</a></td>
-    <td>Schiaffino</td>
     <td>12/04/2025</td>
+    <td>Schiaffino</td>
     <td>
       <ul>
         <li>2.v) Vectorización (conversión de un texto en tanto dato no estructurado en un arreglo numérico estructurado; CountVectorizer, TfidfVectorizer).</li>
@@ -185,8 +190,8 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
   </tr>
   <tr>
     <td><a href="./Clase-11/index.md">11</a></td>
-    <td>Carranza<br>Schiaffino</td>
     <td>31/05/2025</td>
+    <td>Carranza<br>Schiaffino</td>
     <td>
       <ul>
         <li>4.iv) Análisis sintáctico basado en dependencias y su anotación en CONLL-U.</li>
@@ -207,7 +212,11 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
     <td>Schiaffino</td>
     <td>
       <ul>
-        <li></li>
+        <li>5.c.i) armado de dataset con oraciones. ii) métodos de medición de similitud semántica (similitud coseno, similitud por presencia de token, word2vec, FastText)</li>
+<li>5.b.i) Sistemas de anotación (BOU, BILOU). ii) NER de Spacy y Stanza y extracción de relaciones.</li>
+<li>5.b.iii) Extracción de información en reportes médicos.</li>
+<li>5.b.iv) Detección de relaciones en informes médicos.</li>
+<li>Entrega TP2</li>
       </ul>
     </td>
     <td>
@@ -222,7 +231,10 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
     <td>Carranza</td>
     <td>
       <ul>
-        <li></li>
+        <li>5.ai) el análisis de sentimiento. Modelos disponibles en NLTK y Stanza.</li>
+<li>5.a.v) Detección de lenguaje de odio. Pysentimiento. Comentar sobre el diseño del entrenamiento, pasos, selección y evaluación de anotadores.
+</li>
+<li>Consigna de TP3</li>
       </ul>
     </td>
     <td>
@@ -237,7 +249,8 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
     <td>Schiaffino</td>
     <td>
       <ul>
-        <li></li>
+        <li>5.a.iv) Entrenamiento de modelos de clasificación para análisis de sentimiento (Bayesiano Ingenuo, Regresión Logística y Máquina de soporte vectorial) y comparación de su rendimiento.</li>
+<li>Entrega de TP3</li>
       </ul>
     </td>
     <td>
@@ -252,7 +265,9 @@ En la cursada vamos a utilizar diversos recursos computacionales, ......
     <td>Carranza</td>
     <td>
       <ul>
+								<li>5.d. Entendimiento del lenguaje natural (*Natural Language Understanding*) en la era de los grandes modelos de lenguaje.</li>
         <li>Cierre de cursada.</li>
+        <li>Presentación consignas para trabajo final</li>
       </ul>
     </td>
     <td></td>
