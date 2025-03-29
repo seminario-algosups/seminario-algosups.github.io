@@ -50,7 +50,7 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     </td>
     <td>
       <ul>
-        <li></li>
+        <li><a href="Clase-02/clase-2-mas_python_datasets.md">Jupyter notebook</a></li>
       </ul>
     </td>
   </tr>

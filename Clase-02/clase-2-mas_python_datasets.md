@@ -1,9 +1,7 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chafa618/curso_anotacion_puan/blob/main/Clase2/clase-2-mas_python_datasets.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seminario-algosups/seminario-algosups.github.io/blob/master/Clase-02/clase-2-mas_python_datasets.ipynb)
 
 ### Sugerencias de uso de la Notebook: 
 -- Sugerimos 'Abrir en Colab' y realizar una copia del cuaderno antes de usarlo.
-
-
 
 
 
