@@ -1,6 +1,11 @@
 import matplotlib.pyplot as plt
 import json
 import numpy as np
+from datasets import load_dataset
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report
+from sklearn.pipeline import make_pipeline
 
 def plot_linear_function(m=2, b=1, x_range=(-10, 10), num_points=100, show_data=False, noise_std=1.0):
     """
@@ -37,11 +42,53 @@ def plot_linear_function(m=2, b=1, x_range=(-10, 10), num_points=100, show_data=
 
 
 def load_json_data(path):
+    """
+    Carga datos desde un archivo JSON y los devuelve como un objeto Python.
+    """
     with open(path, 'r', encoding='utf-8') as json_file:
         json_data = json.load(json_file)
     return json_data
 
 
 def save_json(data, file):
+    """
+    Guarda un objeto Python en un archivo JSON.
+    """
     with open(file, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
+        
+        
+def train_sentiment_classifier():
+    """
+    Entrena un modelo de clasificación binaria para análisis de sentimientos utilizando el dataset IMDb.
+    
+    Devuelve:
+        - pipeline: el modelo entrenado (pipeline de scikit-learn).
+        - report: un string con el reporte de clasificación.
+    """
+    
+    # Cargamos el dataset "imdb" y seleccionamos una muestra para entrenamiento y prueba
+    dataset = load_dataset("imdb")
+    train_data = dataset['train'].shuffle(seed=42).select(range(5000))  # Muestra de 5000 ejemplos
+    test_data = dataset['test'].shuffle(seed=42).select(range(1000))      # Muestra de 1000 ejemplos
+
+    # Extraemos los textos y las etiquetas
+    X_train = train_data['text']
+    y_train = train_data['label']
+    X_test = test_data['text']
+    y_test = test_data['label']
+
+    # Creamos un pipeline que vectoriza el texto con TF-IDF y entrena un modelo de regresión logística
+    pipeline = make_pipeline(
+        TfidfVectorizer(max_features=10000),
+        LogisticRegression(solver='liblinear')
+    )
+
+    # Entrenamos el modelo
+    pipeline.fit(X_train, y_train)
+
+    # Realizamos predicciones y generamos un reporte de clasificación
+    y_pred = pipeline.predict(X_test)
+    report = classification_report(y_test, y_pred)
+
+    return pipeline, report
