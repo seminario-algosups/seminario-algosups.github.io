@@ -1,7 +1,8 @@
 ### Sugerencias de uso de la Notebook: 
--- Sugerimos 'Abrir en Colab' y realizar una copia del cuaderno antes de usarlo.
+- Sugerimos 'Abrir en Colab' y realizar una copia del cuaderno antes de usarlo.
+- Para acceder a la version .md --> [acá](https://colab.research.google.com/github/seminario-algosups/seminario-algosups.github.io/blob/master/Clase-03/clase-3-aprendizaje-automatico.md)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chafa618/curso_anotacion_puan/blob/main/Clase3/clase3.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seminario-algosups/seminario-algosups.github.io/blob/master/Clase-03/clase-3-aprendizaje-automatico.ipynb)
 
 # Clase 3:
 
@@ -212,14 +213,47 @@ Por suerte para nosotros, o no, este tipo de métricas ya están implementadas y
 ```python
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
+
 resultado_esperado = ["SPAM", "NO_SPAM", "SPAM", "SPAM", "NO_SPAM", "SPAM"]
 resultado_obtenido = ["SPAM", "NO_SPAM", "SPAM", "NO_SPAM", "NO_SPAM", "SPAM"]
 
-y_true = [1, 0, 1, 1, 0, 1] 
+
+print("\nComparación de Resultados:")
+print("-" * 50)
+print("Email\tEsperado\tObtenido\tCorrecto?")
+print("-" * 50)
+for i in range(len(resultado_esperado)):
+    correct = "✓" if resultado_esperado[i] == resultado_obtenido[i] else "✗"
+    print(f"{i+1}\t{resultado_esperado[i]}\t{resultado_obtenido[i]}\t{correct}")
+
+
+y_true = [1, 0, 1, 1, 0, 1]  # 1: SPAM, 0: NO_SPAM
 y_pred = [1, 0, 1, 0, 0, 1]
 
-print("Accuracy:", accuracy_score(y_true, y_pred))
-print("Precisión:", precision_score(y_true, y_pred))
-print("Cobertura:", recall_score(y_true, y_pred))
-print("F1-score: ", f1_score(y_true, y_pred))
+print("\nMétricas de Evaluación:")
+print("-" * 50)
+print(f"Accuracy: {accuracy_score(y_true, y_pred):.2f} - (Predicciones correctas / Total)")
+print(f"Precisión: {precision_score(y_true, y_pred):.2f} - (Verdaderos SPAM / Total predichos como SPAM)")
+print(f"Cobertura: {recall_score(y_true, y_pred):.2f} - (SPAM detectados / Total SPAM reales)")
+print(f"F1-score: {f1_score(y_true, y_pred):.2f} - (Balance entre Precisión y Cobertura)")
 ```
+
+
+```python
+from funciones import train_sentiment_classifier
+
+```
+
+
+```python
+model, report = train_sentiment_classifier()
+```
+
+
+```python
+from pprint import pprint
+pprint(report)
+```
+
+{% include copybutton.html %}
+{% include additional_content.html %}
