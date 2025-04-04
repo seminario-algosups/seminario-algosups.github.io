@@ -4,7 +4,9 @@ ii) Métricas usuales para medir el rendimiento de modelos de clasificación (ac
 iii) Anotación como tarea a resolver por un modelo predictivo. 
 iv) Datos estructurados y no estructurados: manejo de estructuras de almacenamiento de datos (json, csv). 
 
-Para esta clase vamos a usar [esta notebook](./clase-3-aprendizaje-automatico.ipynb). Además necesitarán descargarse el siguiente [script de python](./funciones.py) 
+Para esta clase vamos a usar [esta notebook](./clase-3-aprendizaje-automatico.md).
+
+Además necesitarán descargarse el siguiente [script de python](./funciones.py).
 
 ## Bibliografía
 - Jurafsky, Daniel y James H. Martin. 2024. “Naive Bayes, Text Classification, and Sentiment”. Speech and Language Processing. Versión no final de febrero de 2024 (para puntos vi).
