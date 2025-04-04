@@ -1,9 +1,7 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chafa618/curso_anotacion_puan/blob/main/Clase2/clase-2-mas_python_datasets.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seminario-algosups/seminario-algosups.github.io/blob/master/Clase-02/clase-2-mas_python_datasets.ipynb)
 
 ### Sugerencias de uso de la Notebook: 
 -- Sugerimos 'Abrir en Colab' y realizar una copia del cuaderno antes de usarlo.
-
-
 
 
 
@@ -74,12 +72,19 @@ Los bucles, por otra parte, existen en todos los lenguajes de programación. Aun
 indice = 0 
 
 while indice < len(lista_de_nombres): # Condición del bucle
-
+    print(indice)
     nombre = lista_de_nombres[indice]
     print(nombre)
-    indice = indice + 1
+    indice += 1
     
 
+```
+
+
+```python
+len(lista_de_nombres)
+
+print(lista_de_nombres[6])
 ```
 
 
@@ -92,11 +97,20 @@ for nombre in lista_de_nombres:
 
 
 ```python
-def regresion(n):
+x = 0 # Contador
+for i in lista_de_nombres:
+    x += 1 
+    print(x, "Nombre: ", i)
+```
+
+
+```python
+def regresion(n:int):
     while n > 0:
         print(n)
         n = n-1
     print('Despegue!')
+
     
 regresion(int(input("Ingresá un numero:")))
 ```
@@ -119,10 +133,10 @@ Otros operadores de comparación:
 
 
 ```python
-4 > 2
+#4 > 2
 #4 < 2
 #4 == 4   # OJO: " = "
-# cuatro = 4
+cuatro = 4
 ```
 
 ### Operadores Lógicos:
@@ -144,7 +158,7 @@ Finalmente, el operador `not` niega una expresion booleana, de forma que `not(x 
 
 ```python
 # Descomenta la siguiente linea para ver qué sucede
-# 5 == True ?
+1 == True #?
 ```
 
 
@@ -192,8 +206,49 @@ np_masc
 np_fem
 ```
 
+
+```python
+if 2 == 4:
+    print("Recursa matematica")
+else: 
+    print("Vamos bien")    
+
+```
+
 ### 📍 Ejercicio:
 Escribir una función que tome un carácter y devuelva True si es una vocal, de lo contrario devuelve False.
+
+
+```python
+def is_vowel(letra):
+    vowels = ["a","e","i","o","u"]
+    if letra in vowels:
+        return True
+    else: 
+        return False
+    
+    
+def is_vowel2(c):
+    vowels = ["a","e","i","o","u"]
+    for v in vowels:
+        print(v)
+        if v == c:
+            return True
+            
+def is_vowel_uni():
+    letra = input('Escribí un caracter ')
+    vowels = ["a","e","i","o","u"]
+    if letra.lower() in vowels:
+        return True
+    else: 
+        return False
+    
+```
+
+
+```python
+is_vowel2("i")
+```
 
 ## 📌 **Uso de Librerías**
 
@@ -242,14 +297,29 @@ listdir(".") # Además podemos usar directamente la función,
 
 ```
 
-## Modulos propios
+## Módulos propios
 
 Nosotros podemos construir nuestro propio set de herramientas e importar funcionalidades previamente desarolladas, a la vez que podemos hacer uso de librerías 'ajenas' o desarrolladas por alguien más, una persona, una empresa o la comunidad OS. 
 
 
 ```python
+# Para obtener el archivo de la librería que estamos usando descomentar la siguiente línea
+# !wget https://raw.githubusercontent.com/seminario-algosups/seminario-algosups.github.io/master/Clase-02/mi_libreria.py
+# !wget https://github.com/seminario-algosups/seminario-algosups.github.io/blob/master/Clase-02/mi_libreria.py
+```
+
+
+```python
 from mi_libreria import pasar_a_mayusculas
 pasar_a_mayusculas("un texto random")
+
+```
+
+
+```python
+# import sys
+# sys.path.append('/content')
+# import mi_libreria
 ```
 
 ### 📌 Integración con Google Drive
@@ -259,8 +329,8 @@ pasar_a_mayusculas("un texto random")
 # Al ejecutar esta celda se vinculará tu cuenta de Google Drive
 # Si no estás trabajando desde colab, omití este paso.
 
-# from google.colab import drive
-# drive.mount('/content/drive')
+from google.colab import drive
+drive.mount('/content/drive')
 ```
 
 ## 📌 Archivos
@@ -413,6 +483,14 @@ dataset = load_dataset("imdb")
 
 
 print(dataset) ## Inspeccionemos cómo luce
+```
+
+
+```python
+from pprint import pprint
+
+pprint(dataset['train'][0])  # Inspeccionemos cómo luce
+
 ```
 
 {% include copybutton.html %}
