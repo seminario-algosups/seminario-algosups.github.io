@@ -3,7 +3,7 @@
 - iv) lenguaje de programación Python en Google Colab (funciones, librerías, archivos) 
 - v) Exploración de algunos recursos de libre acceso relevantes: Kaggle y Huggingface, GitHub.
 
-Para esta clase vamos a usar [esta notebook](./clase-2-mas_python_datasets.ipynb).
+Para esta clase vamos a usar [esta notebook](./clase-2-mas_python_datasets.ipynb). Además necesitarán descargarse el siguiente [script de python](./mi_libreria.py) 
 
 Bibliografía: 
 
