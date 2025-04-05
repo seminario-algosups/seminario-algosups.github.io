@@ -69,7 +69,7 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     <td>
     <ul>
     </ul>
-            <li><a href="Clase-03/clase-3-aprendizaje-automatico.md">Jupyter Notebok</li>
+            <li><a href="Clase-03/clase-3-aprendizaje-automatico.md">Jupyter Notebook</li>
     </td>
   </tr>
   <tr>
