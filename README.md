@@ -55,7 +55,7 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     </td>
   </tr>
   <tr>
-    <td><a href="./Clase-03/index.md">03</a></td>
+    <td><a href="Clase-03/clase-3-aprendizaje-automatico.md">03</a></td>
     <td>05/04/2025</td>
     <td>Schiaffino</td>
     <td>
@@ -69,7 +69,7 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     <td>
     <ul>
     </ul>
-            <li></li>
+            <li><a href="Clase-03/clase-3-aprendizaje-automatico.md">Jupyter Notebok</li>
     </td>
   </tr>
   <tr>
