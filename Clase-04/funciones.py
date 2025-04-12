@@ -76,7 +76,7 @@ def plot_bag_of_words(sentences):
     all_words = []
 
     for sentence in sentences:
-        norm_sentence = preprocess_text(sentence)
+        norm_sentence = sentence
         all_words.extend([word for word in norm_sentence.split()])
 
     wordcloud = WordCloud().generate(" ".join(all_words))
@@ -87,7 +87,7 @@ def plot_bag_of_words(sentences):
     plt.show()
     
     
-def plot_tfif_matrix(X, texts, words):
+def plot_tfidf_matrix(X, texts, words):
     # Convertir la matriz dispersa a densa
     X_dense = X.toarray()
 
