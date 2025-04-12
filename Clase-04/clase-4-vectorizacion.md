@@ -40,7 +40,7 @@ Donde:
 
 
 
-####  Recall (Sensibilidad)
+####  Recall (Cobertura)
 
 La recall mide la capacidad del modelo para identificar correctamente todas las instancias positivas.
 
