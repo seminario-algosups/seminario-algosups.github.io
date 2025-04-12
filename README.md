@@ -86,6 +86,8 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     <td>
       <ul>
       	<li><a href="Clase-04/clase-4-vectorizacion.md">Jupyter Notebook</li>
+      	<li><a href="Clase-04/funciones.py">Este script de Python</li>
+      	<li><a href="Clase-04/clase04.pdf">Presentación sobre Bayesiano Ingenuo</li>
       </ul>
     </td>
   </tr>

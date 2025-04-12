@@ -8,6 +8,8 @@ Para esta clase vamos a usar [esta notebook](./clase-4-vectorizacion.ipynb).
 
 Además necesitarán descargarse el siguiente [script de python](./funciones.py).
 
+También nvamos a usar [esta presentación](./clase04.pdf).
+
 ## Bibliografía
 
 - Jurafsky, Daniel y James H. Martin. 2025. “Vector Semantics and Embeddings”. Speech and Language Processing. Versión no final de enero de 2025 (para puntos vi).
