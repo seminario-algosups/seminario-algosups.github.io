@@ -73,18 +73,19 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     </td>
   </tr>
   <tr>
-    <td><a href="./Clase-04/index.md">04</a></td>
+    <td><a href="./Clase-04/clase-4-vectorizacion.md">04</a></td>
     <td>12/04/2025</td>
     <td>Schiaffino</td>
     <td>
       <ul>
-        <li>2.v) Vectorización (conversión de un texto en tanto dato no estructurado en un arreglo numérico estructurado; CountVectorizer, TfidfVectorizer).</li>
-<li>2.vi) Modelos de clasificación: Bayesiano ingenuo.</li>
+        <li>2.v) Vectorización (conversión de un texto en tanto dato no estructurado en un arreglo numérico estructurado; CountVectorizer, TfidfVectorizer).
+        </li>
+        <li>2.vi) Modelos de clasificación: Bayesiano ingenuo.</li>
       </ul>
     </td>
     <td>
       <ul>
-      	<li></li>
+      	<li><a href="Clase-04/clase-4-vectorizacion.md">Jupyter Notebook</li>
       </ul>
     </td>
   </tr>
