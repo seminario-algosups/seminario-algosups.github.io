@@ -745,12 +745,5 @@ plot_confusion_matrix(testset_df['label'], testset_df['predicted_label_cv'], "Co
 make_classification_report(testset_df['label'], testset_df['predicted_label_cv'], "Count Vectorizer")
 ```
 
-
-```python
-
-```
-
-
-```python
-
-```
+{% include copybutton.html %}
+{% include additional_content.html %}
