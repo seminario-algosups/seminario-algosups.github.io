@@ -4,7 +4,7 @@ En esta clase veremos:
 - vi) Modelos de clasificación: Bayesiano ingenuo
 
 
-Para esta clase vamos a usar [esta notebook](Clase-04/clase-4-vectorizacion.ipynb).
+Para esta clase vamos a usar [esta notebook](./Clase-04/clase-4-vectorizacion.ipynb).
 
 Además necesitarán descargarse el siguiente [script de python](./funciones.py).
 
