@@ -63,12 +63,12 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     	<li>2.i) Aprendizaje supervisado y no supervisado.</li>
     	<li>2.ii) Métricas usuales para medir el rendimiento de modelos de clasificación (accuracy, precisión y cobertura).</li>
     	<li>2.iii) Anotación como tarea a resolver por un modelo predictivo.</li>
-    	<li>2.iv) Datos estructurados y no estructurados: manejo de estructuras de almacenamiento de datos (json, csv)</li>. 
+    	<li>2.iv) Datos estructurados y no estructurados: manejo de estructuras de almacenamiento de datos (json, csv).</li>
         </ul>
     </td>
     <td>
     <ul>
-            <li><a href="Clase-03/clase-3-aprendizaje-automatico.md">Jupyter Notebook</li>
+    <li><a href="Clase-03/clase-3-aprendizaje-automatico.md">Jupyter Notebook</li>
     </ul>
     </td>
   </tr>
