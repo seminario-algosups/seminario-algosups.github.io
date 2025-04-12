@@ -68,8 +68,8 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     </td>
     <td>
     <ul>
-    </ul>
             <li><a href="Clase-03/clase-3-aprendizaje-automatico.md">Jupyter Notebook</li>
+    </ul>
     </td>
   </tr>
   <tr>
@@ -78,8 +78,7 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     <td>Schiaffino</td>
     <td>
       <ul>
-        <li>2.v) Vectorización (conversión de un texto en tanto dato no estructurado en un arreglo numérico estructurado; CountVectorizer, TfidfVectorizer).
-        </li>
+        <li>2.v) Vectorización (conversión de un texto en tanto dato no estructurado en un arreglo numérico estructurado; CountVectorizer, TfidfVectorizer).</li>
         <li>2.vi) Modelos de clasificación: Bayesiano ingenuo.</li>
       </ul>
     </td>
