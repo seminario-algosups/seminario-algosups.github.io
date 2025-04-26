@@ -118,7 +118,7 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     </td>
     <td>
       <ul>
-        <li></li>
+        <li><a href="./Clase-06/clase06.pdf">Presentación</a></li>
       </ul>
     </td>
   </tr>
