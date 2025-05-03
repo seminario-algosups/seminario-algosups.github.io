@@ -135,7 +135,7 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     </td>
     <td>
       <ul>
-        <li></li>
+        <li><a href="./Clase-07/clase07.md">Notebook</a></li>
       </ul>
     </td>
   </tr>
