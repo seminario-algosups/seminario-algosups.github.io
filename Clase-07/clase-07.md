@@ -2,6 +2,16 @@
 
 
 
+```python
+
+```
+
+### Sugerencias de uso de la Notebook: 
+- Sugerimos 'Abrir en Colab' y realizar una copia del cuaderno antes de usarlo.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seminario-algosups/seminario-algosups.github.io/blob/master/Clase-07/clase-07.ipynb)
+
+
 *   **Conceptos Clave:**
     *   **Raíz (Root):** El núcleo léxico irreductible de una palabra una vez que se han eliminado todos los afijos flexivos y derivativos. *Ejemplo: 'port-' en 'portador', 'exportar', 'transporte'.*
     *   **Lema (Lemma):** La forma *canónica* o de diccionario de una palabra. Representa el conjunto de todas sus formas flexionadas. *Ejemplo: 'correr' es el lema de 'corro', 'corres', 'corrió', 'corriendo'.*
