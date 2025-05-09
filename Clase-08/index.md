@@ -1,5 +1,4 @@
 # Clase 8
-
-En esta clase...
+Para la clase vamos a usar [esta notebook](./clase-08.md) y [este archivo](./noticia.txt)
 
 {% include additional_content.html %}
