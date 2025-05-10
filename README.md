@@ -153,7 +153,8 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     </td>
     <td>
       <ul>
-        <li></li>
+        <li><a href="./Clase-08/clase08.md">Notebook</a></li>
+        <li><a href="./Clase-08/noticia.txt">Noticia etiquetada</a></li>
       </ul>
     </td>
   </tr>
