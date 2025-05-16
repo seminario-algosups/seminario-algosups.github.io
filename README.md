@@ -160,13 +160,9 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
   </tr>
   <tr>
     <td><a href="./Clase-09/index.md">09</a></td>
-    <td>17/05/2025</td>
-    <td>Carranza</td>
+    <td>17/05/2025 <br> (No hay clase por <br> cierre de Facultad)</td>
+    <td></td>
     <td>
-      <ul>
-        <li>3.b.ii) etiquetamiento en CONLL-U de clase de palabra con EAGLES y de rasgos morfológicos</li>
-        <li>4.i) Análisis basado en constituyentes y gramáticas basadas en dependencias.</li>
-      </ul>
     </td>
     <td>
       <ul>
@@ -180,10 +176,11 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     <td>Carranza</td>
     <td>
       <ul>
+        <li>3.b.ii) etiquetamiento en CONLL-U de clase de palabra con EAGLES y de rasgos morfológicos</li>
+        <li>4.i) Análisis basado en constituyentes y gramáticas basadas en dependencias.</li>
         <li>4.iii) Penn Treebank. Sistema de anotación sintáctica basada en constituyentes.</li>
 <li>4.ii.a) Parser basado en constituyentes BLLIP</li>
-<li>4.ii.b) parsers basados en dependencias Spacy y Stanza.</li>
-<li>4.iv) Análisis sintáctico basado en dependencias y su anotación en CONLL-U.</li>
+en CONLL-U.</li>
       </ul>
     </td>
     <td>
@@ -198,7 +195,8 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     <td>Carranza<br>Schiaffino</td>
     <td>
       <ul>
-        <li>4.iv) Análisis sintáctico basado en dependencias y su anotación en CONLL-U.</li>
+<li>4.ii.b) parsers basados en dependencias Spacy y Stanza.</li>
+<li>4.iv) Análisis sintáctico basado en dependencias y su anotación en CONLL-U.</li>
         <li>4.ii) Representación del texto como bolsa de palabras.</li>
         <li>iii) Representación del texto como arreglo numérico: matrices ralas (término-término, término-documento) y matrices densas (embeddings).</li>
         <li>Entrega consigna de TP2</li>
