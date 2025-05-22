@@ -180,7 +180,6 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
         <li>4.i) Análisis basado en constituyentes y gramáticas basadas en dependencias.</li>
         <li>4.iii) Penn Treebank. Sistema de anotación sintáctica basada en constituyentes.</li>
 <li>4.ii.a) Parser basado en constituyentes BLLIP</li>
-en CONLL-U.</li>
       </ul>
     </td>
     <td>
@@ -192,7 +191,7 @@ en CONLL-U.</li>
   <tr>
     <td><a href="./Clase-11/index.md">11</a></td>
     <td>31/05/2025</td>
-    <td>Carranza<br>Schiaffino</td>
+    <td>Carranza</td>
     <td>
       <ul>
 <li>4.ii.b) parsers basados en dependencias Spacy y Stanza.</li>
@@ -230,7 +229,7 @@ en CONLL-U.</li>
   <tr>
     <td><a href="./Clase-13/index.md">13</a></td>
     <td>14/06/2025</td>
-    <td>Carranza</td>
+    <td>Schiaffino</td>
     <td>
       <ul>
         <li>5.ai) el análisis de sentimiento. Modelos disponibles en NLTK y Stanza.</li>
