@@ -1,5 +1,5 @@
 # Clase 10 
 
-Agregar contenido para el índice de la clase.
+Para la clase vamos a usar [esta presentación](./clase10.pdf).
 
 {% include additional_content.html %}
