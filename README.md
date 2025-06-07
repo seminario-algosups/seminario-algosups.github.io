@@ -223,7 +223,7 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     <td>
       <ul>
         <li><a href="./Clase-12/clase_similitud_ner.md">Notebook</a></li>
-         <li><a href=".Clase-12/CLASE-EMBEDDINGS.pdf">Pdf Embeddings</a></li>
+         <li><a href="./Clase-12/CLASE-EMBEDDINGS.pdf">Pdf Embeddings</a></li>
       </ul>
     </td>
   </tr>
