@@ -208,7 +208,7 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     </td>
   </tr>
   <tr>
-    <td><a href="./Clase-12/index.md">12</a></td>
+    <td><a href="./Clase-12/clase_similitud_ner.md">12</a></td>
     <td>07/06/2025</td>
     <td>Schiaffino</td>
     <td>
@@ -222,7 +222,8 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     </td>
     <td>
       <ul>
-        <li></li>
+        <li><a href="./Clase-12/clase_similitud_ner.md">Notebook</a></li>
+         <li><a href=".Clase-12/CLASE-EMBEDDINGS.pdf">Pdf Embeddings</a></li>
       </ul>
     </td>
   </tr>
