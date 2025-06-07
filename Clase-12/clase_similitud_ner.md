@@ -204,6 +204,34 @@ print(df_vec['oracion'][1])
 
 ### Entidades
 
+En Procesamiento del Lenguaje Natural hablamos de entidad (o Named Entity, NE) cuando un fragmento de texto ­—una o varias palabras consecutivas— refiere a un objeto concreto del mundo que podemos tipificar: personas, organizaciones, lugares, fechas, cantidades, obras artísticas, etc. 
+
+El reconocimiento de entidades (Named Entity Recognition, NER) consiste en detectar cada mención y asignarle una clase semántica
+
+
+
+| Década        | Hitos                                                                                                                                                                                                                                     | Tecnologías dominantes                                    |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| **1990-1999** | *Message Understanding Conferences* (MUC-6, 1995) introducen la tarea de NE con tres etiquetas (ENAMEX, TIMEX, NUMEX). Sistemas basados en reglas, diccionarios y expresiones regulares. ([cs.nyu.edu][1], [aclanthology.org][2])         | Gramáticas reguladas, *gazetteers*, expresiones regulares |
+| **2000-2009** | *Shared tasks* CoNLL-2002 (español, neerlandés) y CoNLL-2003 (inglés, alemán) fijan corpora estándar y métricas. Aparición de modelos estadísticos discriminativos (Máx. Entropía, CRF). ([aclanthology.org][3], [paperswithcode.com][4]) | HMM, MEMM, CRF                                            |
+| **2010-2017** | Primera ola *deep*: vectores distribucionales + BiLSTM-CRF superan a modelos basados en *features* manuales.                                                                                                                              | Word2Vec/GloVe + BiLSTM-CRF                               |
+| **2018-hoy**  | Transición a *Transformers*: BERT y derivados alcanzan SOTA con ajuste fino mínimo; surgen modelos multilingües (mBERT) y específicos (BETO, RoBERTa-BNE). ([huggingface.co][5], [machinelearningmastery.com][6])                         | BERT, RoBERTa, GPT, LLMs + *prompting*                    |
+
+[1]: https://cs.nyu.edu/~grishman/muc6.html?utm_source=chatgpt.com "MUC-6"
+[2]: https://aclanthology.org/C96-1079.pdf?utm_source=chatgpt.com "[PDF] Message Understanding Conference- 6: A Brief History"
+[3]: https://aclanthology.org/W03-0419.pdf?utm_source=chatgpt.com "[PDF] Introduction to the CoNLL-2003 Shared Task - ACL Anthology"
+[4]: https://paperswithcode.com/dataset/conll-2003?utm_source=chatgpt.com "CoNLL 2003 Dataset | Papers With Code"
+[5]: https://huggingface.co/dslim/bert-base-NER?utm_source=chatgpt.com "dslim/bert-base-NER - Hugging Face"
+[6]: https://machinelearningmastery.com/how-to-do-named-entity-recognition-ner-with-a-bert-model/?utm_source=chatgpt.com "How to Do Named Entity Recognition (NER) with a BERT Model"
+
+
+## Recursos y panorama hispanohablante
+
+El español fue pionero en NER con CoNLL-2002, y hoy dispone de corpora ricos como AnCora-ES (500 000 palabras, múltiples niveles de anotación) muy usado para entrenar y evaluar sistemas de NER, dependencia y coreferencia. [clic.ub.edu]
+
+
+Modelos pre-entrenados (BETO, bert-base-NER adaptado) ofrecen bases sólidas y pueden ajustarse con bibliotecas como spaCy, Hugging Face o Stanza en pocas líneas de código.
+
 ## 3. Sistemas de anotación BIO / BILOU (5.b.i)
 
 En **NLP** se usan esquemas que indican qué tokens pertenecen a entidades nombradas.
