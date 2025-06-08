@@ -1,0 +1,133 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usefonttheme{professionalfonts}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+
+\title{pysentimiento}
+\subtitle{Toolkit Multilingüe para Minería de Opiniones en Redes Sociales}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+  \begin{itemize}
+    \item Autores: Juan Manuel Pérez, Mariela Rajngewerc, Juan Carlos Giudici, Damián A. Furman, Franco Luque, Laura Alonso Alemany, María Vanina Martínez
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{1. Introducción y Motivación}
+  \begin{itemize}
+    \item La extracción de opiniones y estados de ánimo del texto de redes sociales ha crecido sustancialmente.
+    \item Desafíos para investigadores: APIs comerciales, sólo inglés, complejidad técnica.
+    \pause
+    \item \textbf{Problema central:} recursos escasos → APIs de pago o modelos obsoletos o no disponibles en otros idiomas.
+    \pause
+    \item \textbf{Volumen de datos:} 500 millones de tweets/día (2021) \- imposible analizar manualmente.
+    \pause
+    \item \textbf{Aplicaciones:} Análisis de comportamiento del consumidor, campañas políticas, evolución de patrones emocionales
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{2. ¿Qué es pysentimiento?}
+  \begin{itemize}
+    \item Librería Python open source para minería de opiniones y PNL social.
+    \item Objetivo: accesibilidad para investigadores y no expertos, y soporte multilingüe.
+    \item Basada en Transformers de HuggingFace → aprovecha modelos preentrenados de última generación.
+    \item Idiomas soportados: español, inglés, italiano y portugués.
+    \item Disponible en GitHub y HuggingFace Hub como software libre.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{3. Contribuciones Principales}
+  \begin{itemize}
+    \item Toolkit multilingüe y de código abierto para minería de opiniones en Python.
+    \item Evaluación exhaustiva de modelos preentrenados de vanguardia para distintas tareas e idiomas.
+    \item Evaluación de equidad en análisis de emociones (inglés).
+    \item Comparativa con otras herramientas open‑source.
+    \item Publicación de modelos óptimos dentro de la librería.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{4. Tareas Soportadas}
+  \begin{enumerate}
+    \item \textbf{Análisis de Sentimiento:} positivo/negativo/neutral.
+    \item \textbf{Detección de Emociones:} Ekman (ira, asco, miedo, alegría, tristeza, sorpresa) u otras categorías.
+    \item \textbf{Detección de Discurso de Odio:} violencia hacia individuos/grupos protegidos. Clasificación binaria o multietiqueta.
+    \item \textbf{Detección de Ironía:} significado opuesto al literal, tarea semántica desafiante.
+    \item También incluye POS tagging, NER, detección contextualizada de discurso de odio y análisis de sentimiento dirigido (español rioplatense), aunque no se enfocan en el trabajo principal.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{5. Metodología y Modelos Preentrenados}
+  \begin{itemize}
+    \item Evaluación de modelos generales y especializados en redes sociales.
+    \item \textbf{Preprocesamiento Twitter:}
+      \begin{itemize}
+        \item Repeticiones limitadas (máx 3).
+        \item "jajajajaja" → "jaja"
+        \item Handles → token especial \texttt{@USER}.
+        \item Hashtags → token especial + separación en palabras.
+        \item Emojis → representación textual con token especial \texttt{:emoji:}.
+      \end{itemize}
+    \item Modelos tipo encoder (BERT, RoBERTa, ELECTRA, BERTweet, RoBERTuito, AlBERTo, BERTimbau, BERTweetBR, BERTabaporu).
+    \item Fine‑tuning:
+      \begin{itemize}
+        \item Optimizador Adam, learning rate triangular.
+        \item Búsqueda exhaustiva de hiperparámetros.
+        \item 10 experimentos por combinación (task + idioma), métrica Macro F1.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{6. Evaluación del Rendimiento}
+  \begin{itemize}
+    \item Modelos Especializados vs. Generales: 
+    \begin{itemize} 
+        \item Modelos especializados para redes sociales muestran un rendimiento superior en la mayoría de los idiomas: BERTweet para inglés, BERTweetbr y BERTabaporu para portugués, y RoBERTuito para español.
+      \end{itemize}
+    \item RoBERTuito: rendimiento robusto en múltiples tareas e idiomas, útil para otros como catalán, gallego, euskera.
+    \item Selección: modelo top por tarea e idioma; si el rendimiento es similar, se prefiere el modelo monolingüe/especializado.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{7. Evaluación de la Equidad}
+  \begin{itemize}
+    \item Relevancia de mitigar sesgos sistemáticos en IA.
+    \item Dificultad: falta de recursos adecuados; se utilizó el Equity Evaluation Corpus (ECC) (Kiritchenko \& Mohammad, 2018).
+    \item Criterio de equidad: \textbf{paridad estadística} (Statistical Parity), cuantificado con la métrica de Impacto Dispar (Disparate Impact, DI). Un modelo se considera justo si DI = 1.
+    \item Resultados: DI \> 0.8 → sin impacto adverso evidente.
+    \item Modelos BERTweet y RoBERTuito "no muestran un sesgo mayor que los modelos de dominio general."
+    \item Precaución: corpus ECC "podría no representar el contexto real", y los modelos de lenguaje grandes han demostrado estar "altamente sesgados".
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{8. Comparación con Otras Herramientas}
+  \begin{itemize}
+    \item Se comparó vs VADER, TextBlob, Stanza, TweetNLP y Flair (en sentimient y hate detection).
+    \item pysentimiento obtuvo rendimiento superior en la mayoría de conjuntos.
+    \item Sentimiento: TweetNLP 2.º en Sentiment140; Flair superó en SST‑2.
+    \item Discurso de odio: pysentimiento fue mejor que TweetNLP en todos los idiomas excepto en inglés (TweetNLP > pysentimiento).
+    \item " Maldición Multilingüe": el rendimiento subóptimo de TweetNLP en idiomas distintos al inglés "podría atribuirse a la maldición de la multilingüidad". 
+    En contraste, pysentimiento logra mejores resultados que un modelo multilingüe general, ya que utiliza modelos monolingües especializados. 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{9. Conclusiones y Futuro}
+  \begin{itemize}
+    \item pysentimiento: toolkit multilingüe con rendimiento de vanguardia en minería de opiniones de redes sociales.
+    \item Facilita la investigación en textos de redes sociales.
+    \item Incluye procedimientos para el diagnóstico de sesgos antes del despliegue.
+    \item Código y modelos disponibles en GitHub y HuggingFace.
+    \item Futuro:
+      \begin{itemize}
+        \item Extensión a más idiomas y tareas.
+        \item Utilidades de extracción de información.
+        \item Análisis contextual, no solo oraciones sueltas.
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\end{document}
