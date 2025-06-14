@@ -242,7 +242,7 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     <td>
       <ul>
         <li><a href="./Clase-13/clase13.md">Notebook</a></li>
-        <li><a href="./Clase-13/clase 13.pdf">PDF pySentimiento</a></li>
+        <li><a href="./Clase-13/clase-13.pdf">PDF pySentimiento</a></li>
         <li><a href="./Clase-13/noticia1.txt">Noticia a etiquetar</a></li>
       </ul>
     </td>
