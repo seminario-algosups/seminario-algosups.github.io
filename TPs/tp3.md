@@ -11,7 +11,7 @@ Utilizar la siguiente definición de entidades:
 
 Además, deberán entregar un archivo de criterios de anotación donde justifiquen las decisiones tomadas y, si las hubiera, también las excepciones. 
 
-Pueden usar como referencia la [notebook](../Clase-13/entities-2.ipynb) que veremos en la clase 13. 
+Pueden usar como referencia la [notebook](../Clase-13/entities-2.md) que veremos en la clase 13. 
 
 En esta notebook van a encontrar el código necseario para usar sus anotaciones como entrenamiento para un NER custom.
 
