@@ -259,7 +259,8 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     </td>
     <td>
       <ul>
-        <li></li>
+        <li><a href="./Clase-14/Clase-14.md">Notebook</a></li>
+        <li><a href="./Clase-14/guia_anotacion_entidades.md">Apunte Anotación</a></li>
       </ul>
     </td>
   </tr>
