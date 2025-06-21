@@ -1,7 +1,7 @@
 ### Sugerencias de uso de la Notebook: 
 - Sugerimos 'Abrir en Colab' y realizar una copia del cuaderno antes de usarlo.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seminario-algosups/seminario-algosups.github.io/blob/master/Clase-14/clase-14.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/seminario-algosups/seminario-algosups.github.io/blob/master/Clase-14/Clase-14.ipynb)
 
 
 ```python
@@ -15,6 +15,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, classification_report
 from pysentimiento.preprocessing import preprocess_tweet
+
 
 print("Bibliotecas importadas correctamente.")
 ```

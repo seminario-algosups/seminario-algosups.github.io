@@ -1,3 +1,7 @@
+
+### Sugerencias de uso de la Notebook: 
+
+
 # Guía de anotación de entidades: diseño, criterios y flujo de trabajo
 
 
