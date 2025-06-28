@@ -2,7 +2,7 @@
 
 ## Presentación
 
-Este espacio está pensado para servir de soporte al seminario "Algoritmos supervisados y convenciones de anotación para tareas de procesamiento del lenguaje natural", dictado durante el primer cuatrimestre de 2025 para la carrera de [Letras](https://letras.filo.uba.ar/) de la [Facultad de Filosofía y Letras](https://www.filo.uba.ar/) de la [Universidad de Buenos Aires](https://uba.ar/). El seminario está a cargo de [Fernando Carranza](https://fernando-carranza.github.io/) como profesor adjunto interino con dedicación simple y [Fernando Schiaffino](https://ar.linkedin.com/in/fernando-schiaffino-339237a1/es) con asignación de funciones.
+Este espacio está pensado para servir de soporte al seminario "Algoritmos supervisados y convenciones de anotación para tareas de procesamiento del lenguaje natural", dictado durante el primer cuatrimestre de 2025 para la carrera de [Letras](https://letras.filo.uba.ar/) de la [Facultad de Filosofía y Letras](https://www.filo.uba.ar/) de la [Universidad de Buenos Aires](https://uba.ar/). El seminario está a cargo de [Fernando Carranza](https://fernando-carranza.github.io/) como profesor adjunto interino con dedicación simple y [Fernando Schiaffino](https://ar.linkedin.com/in/fernando-schiaffino-339237a1/es) con asignación de funciones. Se puede consultar el programa [aquí](./Programa/index.md)
 
 ## Modalidad
 
@@ -275,10 +275,15 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
         <li>Presentación consignas para trabajo final</li>
       </ul>
     </td>
-    <td></td>
+    <td>
+    <ul>
+            <li><a href="./Clase-15/Clase-15.pdf">Presentación</a></li>
+</ul>
+    </td>
   </tr>
 </table>
 
+Para la aprobación de la cursada es necesario resolver satisfactoriamente las <a href="TPs/index.md">siguientes instancias de evaluación</a>.
 {% include change_href.html %}
 
 {% include additional_content.html %}
