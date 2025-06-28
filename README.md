@@ -277,13 +277,15 @@ En la cursada vamos a utilizar el [campus](https://campus.filo.uba.ar/) para dis
     </td>
     <td>
     <ul>
-            <li><a href="./Clase-15/Clase-15.pdf">Presentación</a></li>
-</ul>
+        <li><a href="./Clase-15/Clase15.pdf">Presentación</a></li>
+    </ul>
     </td>
   </tr>
 </table>
 
 Para la aprobación de la cursada es necesario resolver satisfactoriamente las <a href="TPs/index.md">siguientes instancias de evaluación</a>.
+
+
 {% include change_href.html %}
 
 {% include additional_content.html %}
